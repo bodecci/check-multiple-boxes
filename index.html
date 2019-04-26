@@ -9,7 +9,7 @@
 
     html {
       font-family: sans-serif;
-      background: #ffc600;
+      background: #60d4bb;
     }
 
     .inbox {
@@ -96,6 +96,16 @@
   </div>
 
 <script>
+
+    const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
+
+    function handleCheck(e) {
+        console.log('event: ', e);
+        
+    }
+
+    checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
+    
 </script>
 </body>
 </html>
