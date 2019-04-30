@@ -99,9 +99,15 @@
 
     const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
 
+    let lastChecked;
+
     function handleCheck(e) {
-        console.log('event: ', e);
-        
+        //check if they had the shift key down
+        //AND check that they are clicking the check box
+        if(e.shiftKey && this.checked){
+          
+        }
+        lastChecked = this;
     }
     // take the checkboxes, loop over each one, add an event listener to each checkbox
     checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
