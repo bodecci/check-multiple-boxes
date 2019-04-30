@@ -5,6 +5,7 @@
   <title>Hold Shift to Check Multiple Checkboxes</title>
 </head>
 <body>
+  <p>Check All Tasks</p>
   <style>
 
     html {
@@ -59,39 +60,39 @@
   <div class="inbox">
     <div class="item">
       <input type="checkbox">
-      <p>This is an inbox layout.</p>
+      <p>Do Laundry.</p>
     </div>
     <div class="item">
       <input type="checkbox">
-      <p>Check one item</p>
+      <p>Take Out Trash</p>
     </div>
     <div class="item">
       <input type="checkbox">
-      <p>Hold down your Shift key</p>
+      <p>Pick lil lady up from School</p>
     </div>
     <div class="item">
       <input type="checkbox">
-      <p>Check a lower item</p>
+      <p>Put dishes away</p>
     </div>
     <div class="item">
       <input type="checkbox">
-      <p>Everything inbetween should also be set to checked</p>
+      <p>Watch some Footy</p>
     </div>
     <div class="item">
       <input type="checkbox">
-      <p>Try to do it without any libraries</p>
+      <p>Practise Your Paradiddles</p>
     </div>
     <div class="item">
       <input type="checkbox">
-      <p>Just regular JavaScript</p>
+      <p>Commit Everyday</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Send Email</p>
     </div>
     <div class="item">
       <input type="checkbox">
       <p>Good Luck!</p>
-    </div>
-    <div class="item">
-      <input type="checkbox">
-      <p>Don't forget to tweet your result!</p>
     </div>
   </div>
 
@@ -113,6 +114,10 @@
               inBetween = !inBetween;
               console.log('Startting to check them inbetween');
               
+            }
+
+            if(inBetween) {
+              checkbox.checked = true;
             }
             
           });
